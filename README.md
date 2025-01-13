@@ -42,6 +42,3 @@ To set up the environment for this project, follow these steps:
 3. **Results**
    - The results will include validation accuracy, mean class accuracy, and overall performance metrics for the chosen classification model.
 
-
-
-![image](https://github.com/user-attachments/assets/5dfbe766-4317-43bd-9439-7b94ca2a85be)
