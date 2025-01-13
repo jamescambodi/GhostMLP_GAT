@@ -1,0 +1,10 @@
+# Python 3.9.19 dependencies
+# pip >= 24.3.1
+numpy==2.0.2
+open3d==0.18.0
+torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+tensorboard==2.18.0
+pandas
+pillow
+scikit-learn
+matplotlib
