@@ -2,13 +2,26 @@
 
 ## Overview
 
-This project focuses on 3D object classification using lightweight machine learning approaches. The proposed pipeline integrates **GhostMLP** for efficient feature extraction and **GAT (Graph Attention Network)** for enhanced feature classification. The project leverages benchmark datasets and features extracted from PointNet++ and GhostMLP architectures for graph-based classification.
+This project focuses on 3D object classification using lightweight machine-learning approaches. The proposed pipeline integrates **GhostMLP** for efficient feature extraction and **GAT (Graph Attention Network)** for enhanced feature classification. The project leverages benchmark datasets and features extracted from PointNet++ and GhostMLP architectures for graph-based classification.
 
 ## Key Features
 - Lightweight feature extraction using **GhostMLP**.
 - Feature classification using graph-based methods (**GCN** and **GAT**).
 - Benchmarked against **PointNet++** for performance comparisons.
 - Optimized for resource-constrained environments.
+
+## Installation and Environment Setup
+
+To set up the environment for this project, follow these steps:
+
+1. **Python Version**:
+   Ensure you have **Python 3.9.19** installed.
+
+2. **Dependencies**:
+   Use the provided `requirements.txt` file to install all necessary dependencies. Run the following command in your terminal:
+
+   ```bash
+   pip install -r requirements.txt
 
 ## How to Use
 
@@ -29,5 +42,6 @@ This project focuses on 3D object classification using lightweight machine learn
 3. **Results**
    - The results will include validation accuracy, mean class accuracy, and overall performance metrics for the chosen classification model.
 
-## Project Structure
-![Uploading image.png…]()
+
+
+![image](https://github.com/user-attachments/assets/5dfbe766-4317-43bd-9439-7b94ca2a85be)
