@@ -27,8 +27,8 @@ To set up the environment for this project, follow these steps:
 
 1. **Dataset Preparation**
    - **Raw Dataset**: 
-     The dataset with partial single-view Point Cloud Data (PCDs) was generated from the benchmark dataset **ModelNet40** using Pointview-GCN. Please download the dataset and follow these steps:
-     - Create a directory named `single_view_modelnet`.
+     The dataset with partial single-view Point Cloud Data (PCDs) was generated from the benchmark dataset **ModelNet40** using Pointview-GCN. Please download the dataset from this link and follow these steps:
+     - Unzip the folder `modelnetdata` and rename it: `single_view_modelnet`.
      - Place the dataset under your project folder’s `data` directory.
    - **Feature Extracted Dataset**:
      - Features extracted using PointNet++ are stored in `data/modelnet_trained_feature`.
@@ -36,9 +36,16 @@ To set up the environment for this project, follow these steps:
 
 2. **Run Feature Classification**
    - As the feature extraction process has already been completed, you can directly run the classification scripts:
-     - For **GCN** classification, execute the corresponding classification file (e.g., `GCN_Point.py`) under the folder GCN.
-     - For **GAT** classification, execute the corresponding classification file (e.g., `GAT_Ghost.py`) under the folder GAT.
+     - For **GCN** classification on PointNet++ extracted features, execute the corresponding classification file (e.g., `GCN_Point.py`) under the folder GCN.
+     - For **GCN** classification on GhostMLP extracted features, execute the corresponding classification file (e.g., `GCN_Ghost.py`) under the folder GCN.
+     - For **GAT** classification on GhostMLP extracted features, execute the corresponding classification file (e.g., `GAT_Ghost.py`) under the folder GAT.
+     - For **GAT** classification on PointNet++ extracted features, execute the corresponding classification file (e.g., `GAT_Point.py`) under the folder GAT.
 
 3. **Results**
    - The results will include validation accuracy, mean class accuracy, and overall performance metrics for the chosen classification model.
+  
+Optional **Run Feature Extraction**
+   - For **PointNet++** feature extraction, execute the corresponding file (e.g., `main.py`) under the folder Feature_extraction_PointNet.
+   - For **GhostMLP** feature extraction, execute the corresponding file (e.g., `main.py`) under the folder Feature_extraction_Ghost.
+
 
