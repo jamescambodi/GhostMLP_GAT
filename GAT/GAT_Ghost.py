@@ -1,3 +1,7 @@
+"""
+This script implements a training pipeline for the GAT on GhostMLP features, which utilizes Graph Attention Networks (GATs) for processing multi-view data. It includes dataset loading, training, validation, and model checkpointing functionalities. The Trainer class handles the core training and evaluation process, while command-line arguments provide customization options.
+"""
+
 import numpy as np
 import random
 import torch

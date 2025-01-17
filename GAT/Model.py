@@ -21,7 +21,7 @@ class Model(nn.Module):
 
     def __init__(self, name):
         """
-        Initialize the base model with a name.
+        Initialise the base model with a name.
 
         Args:
             name (str): The name of the model for checkpoint organization.

@@ -10,6 +10,11 @@ import torch.nn.functional as F
 # Import PointNet++ utility functions
 from torch.utils.data import DataLoader
 
+import argparse
+from tqdm import tqdm
+from dataloader import SinglePoint
+from torch.cuda.amp import autocast
+
 def pc_normalize(pc):
     l = pc.shape[0]
     centroid = np.mean(pc, axis=0)
@@ -342,15 +347,6 @@ class GhostMLPModel(nn.Module):
         logits = F.log_softmax(self.fc3(features), dim=-1)
 
         return logits, l3_points, features  # Output logits, global features, and reduced features
-    
-import os
-import argparse
-import numpy as np
-import torch
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-from dataloader import SinglePoint
-from torch.cuda.amp import autocast
 
 # Define argument parser
 parser = argparse.ArgumentParser()

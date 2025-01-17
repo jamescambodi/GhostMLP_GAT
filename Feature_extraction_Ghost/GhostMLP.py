@@ -87,7 +87,7 @@ class GhostMLPModel(nn.Module):
 
         return logits, l3_points, features  # Output logits, global features, and reduced features
 
-# Normalize point cloud
+# Normalise point cloud
 def pc_normalize(pc):
     centroid = pc.mean(axis=0)
     pc -= centroid
@@ -143,7 +143,7 @@ if __name__ == "__main__":
     batch_size = 32
     learning_rate = 0.001
     save_path = "ghostmlp_model.pth"
-    dataset_root = "../data/single_view_modelnet/*/train"  # Update this to your dataset path
+    dataset_root = "../data/single_view_modelnet/*/train"  # dataset path
 
     # Device configuration
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

@@ -11,7 +11,7 @@ from utils import (
 
 
 class DepthwiseSeparableConv(nn.Module):
-    """why we use Depthwise Separable Convolution?
+    """why use Depthwise Separable Convolution?
     --> It has fewer parameters than standard convolution
     """
 
@@ -170,7 +170,7 @@ class PointViewGAT(Model):
         # Add a "width" dimension for SelfAttention
         pooled_view = pooled_view.unsqueeze(2)  # Shape: [batch_size, channels, 1]
 
-        # Apply SelfAttention
+        # Apply Self-Attention
         pooled_view = self.attention(pooled_view)  # Still [batch_size, channels, 1]
 
         # Remove the added dimension after attention

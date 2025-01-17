@@ -73,7 +73,7 @@ class PointViewGCN(Model):
             nn.Linear(512, self.nclasses)
         )
 
-        # Initialize weights for linear and convolutional layers
+        # Initialise weights for linear and convolutional layers
         for m in self.modules():
             if isinstance(m, nn.Linear):
                 nn.init.kaiming_uniform_(m.weight)

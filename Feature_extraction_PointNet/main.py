@@ -1,4 +1,4 @@
-#Here we extract feature using pre-trained pointnet++ model on the single-view pcd
+#Here extract feature using pre-trained pointnet++ model on the single-view pcd
 #The extracted shape feature would be thee input of the GCN for shape classification
 
 from dataloader import SinglePoint
@@ -30,7 +30,7 @@ def count_model_parameters(model):
 if __name__ == '__main__':
     args = parser.parse_args()
     train_dataset = SinglePoint(args.train_path)
-    train_loader = torch.utils.data.DataLoader(train_dataset, shuffle=False,batch_size=args.batchSize) # shuffle needs to be false! it's done within the trainer
+    train_loader = torch.utils.data.DataLoader(train_dataset, shuffle=False,batch_size=args.batchSize) 
     val_dataset = SinglePoint(args.val_path)
     val_loader = torch.utils.data.DataLoader(val_dataset, shuffle=False,batch_size=args.batchSize)
 
