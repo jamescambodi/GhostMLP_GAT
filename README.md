@@ -44,8 +44,11 @@ To set up the environment for this project, follow these steps:
 3. **Results**
    - The results will include validation accuracy, mean class accuracy, and overall performance metrics for the chosen classification model.
   
-Optional **Run Feature Extraction**
+Optional 1. **Run Feature Extraction again**
    - For **PointNet++** feature extraction, execute the corresponding file (e.g., `main.py`) under the folder Feature_extraction_PointNet.
    - For **GhostMLP** feature extraction, execute the corresponding file (e.g., `main.py`) under the folder Feature_extraction_Ghost.
+
+Optional 2. **Train GhostMLP again**
+   - Run the corresponding file (e.g., `GhostMLP.py`) under the folder Feature_extraction_Ghost.
 
 
